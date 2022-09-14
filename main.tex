@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}  
+\usepackage[margin=1in]{geometry}
+\parindent=0in
+\parskip=8pt
+\usepackage{fancyhdr,amssymb,amsmath, graphicx, listings,float,enumerate,epstopdf,color,multirow,setspace,bm,textcomp}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\algnewcommand{\algorithmicand}{\textbf{ and }}
+\algnewcommand{\algorithmicor}{\textbf{ or }}
+\algnewcommand{\OR}{\algorithmicor}
+\algnewcommand{\AND}{\algorithmicand}
+\algnewcommand{\var}{\texttt}
+\pagestyle{fancy}
+\usepackage{mathtools}
+\usepackage[inline]{enumitem}
+
+%\usepackage{subcaption}
+\usepackage{subfig}
+\captionsetup{compatibility=false}
+%\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+%\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\setlength{\headheight}{14.59999pt}
+\usepackage{authblk}
+
+\begin{document} 
+\makeatletter
+\title{CS6000: Week 3 Journal}
+\author{Vijay Banerjee}
+\maketitle
+
+\fancyhead[LO]{Vijay Banerjee}
+\fancyhead[RO]{Week 3}
+
+
+\section*{Reviewing survey papers}
+
+We surveyed 4 papers on cyber-physical systems (CPS) attacks and vulnerabilities.
+
+The notes on each paper:
+
+\begin{enumerate}
+    \item 
+    \textbf{A Survey of Network Attacks on
+Cyber-Physical Systems}~\cite{9019636}:
+
+This paper classifies the CPS attacks according to the target CPS layer of the attack. The paper uses the layered CPS architecture~\cite{lu2013new} as the basis of classification. The main focus of the paper is to review the literature on CPS attacks that exploit network vulnerabilities in the CPS to execute attacks targeted toward a specific layer of the CPS. The paper also includes Intrusion detection and defense strategies in the literature and classifies them in the same structure of multiple CPS layers.
+
+The main contribution of this paper is the classification of each attack, defense, and detection strategy based on an accepted layered structure of the CPS.
+
+\item 
+\textbf{A Review on Cyber-Physical System Attacks:
+Issues and Challenges}~\cite{singh2020review}:
+
+This paper tried to model the CPS layers according to the OSI model and classified attacks based on the attack objective, i.e., compromise of either of the C/I/A.
+
+The main contribution of the paper is to discuss the CPS as the OSI network layers and model the attack classification. However, the study is not exhaustive and there are a significant number of attacks and papers that are not considered in the taxonomy, classification, or discussion. The paper also lacks a comparison with other related surveys to justify its novelty and contribution of this paper.
+
+\item
+
+\textbf{A Survey of Cyber Attacks on Cyber-Physical
+Systems: Recent Advances and Challenges}~\cite{9763485}:
+
+This is the most recent survey published in the CPS attacks literature, and it provides a very thorough study of the CPS attacks. The main contribution of the paper is considering the attack models from each of the reviewed articles. The paper presents a study of the CPS model, and the attack model and then classifies each attack based on the CIA triad. Though the paper doesn't have any citations yet due to the fact that it was uploaded very recently (in June 2022), this is a noteworthy contribution that will provide a good overview of the potential security risks in CPS.
+
+
+\item
+\textbf{Security of Cyber-Physical Systems: Vulnerabilities,
+Attacks and Countermeasure}~\cite{9216454}:
+
+This paper provided a very brief introduction to CPS and discussed a few attacks classified according to the three-layer CPS model. There is also a brief description of the IDS systems.
+
+Overall the contribution of this review seems very limited and the citation is the lowest in this paper. It can be clearly seen that the lack of citation is due to the lack of extensive review of the literature and a poorly described classification that does describe the system model properly, hence failing to provide a detailed picture of the literature.
+\end{enumerate}
+
+\section*{Topic map}
+Based on the survey papers found through the search, the survey on CPS vulnerability and attacks is majorly classified based on the CPS layers and the CIA triad. An idea for a novel survey classification would be to include the attack timing, persistence, and latency of the recovery and IDS methods. There is research on reducing the IDS latency, which is an important consideration because a timing-based attack might be able to bypass the IDS system simply by executing multiple attacks before IDS can return a decision.
+
+\bibliographystyle{IEEEtran}
+\bibliography{ref}
+\end{document}
